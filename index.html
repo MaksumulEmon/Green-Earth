@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Earth</title>
+
+
+    <!-- Tailwind Css And Daisy  Ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+
+    <header>
+        <nav class="flex justify-around bg-green-700 py-4 items-center">
+            <h1 class="text-2xl text-white">Green Earth</h1>
+
+            <ul class="flex text-white gap-4 ">
+                <li><a href="">About</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Plant a Tree</a></li>
+            </ul>
+            <button class="bg-yellow-200 rounded-full py-3 px-5 text-green-700">Plant a tree</button>
+        </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section>
+        <div class="bg-[#CFF0DC] grid grid-cols-3 ">
+            <img src="./assets/hero-leaf1.png" alt="">
+            <div class="flex flex-col items-center justify-center space-y-5">
+                <h1 class="text-4xl  font-bold text-[#1F2937]">Plant a Tree, Grow a Future</h1>
+                <p class="text-[#1F2937]/80 text-center ">Join our mission to plant 1 million trees and make the Earth
+                    greener for future
+                    generations.</p>
+                <button class="bg-yellow-200 rounded-full py-3 px-5 text-green-700">Get Involved</button>
+
+            </div>
+            <img src="./assets/hero-leaf2.png" alt="">
+
+
+        </div>
+    </section>
+
+
+    <!-- Main Section -->
+    <section class="bg-[#F0FDF4]">
+
+        <!-- Choose Your Tree -->
+        <div class="container mx-auto">
+            <h1 class="text-3xl text-center font-bold text-black">Choose Your Tree</h1>
+
+            <div class="grid grid-cols-12 gap-6  text-center ">
+                <div class="Categories col-span-3  font-2xl font-semibold">
+                    Categories
+                    <div>
+                        <button id="allTressBtn" class="btn btn-success bg-green-700 text-white font-semibold w-full mb-3 ">All Tress</button>
+
+                        <!-- Category Container daimany Load here -->
+                        <div id="categoryContainer" class="space-y-3">
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-span-6 bg-amber-100">
+                    Trees
+                </div>
+
+
+                <div class=" col-span-3 bg-blue-600">
+                    Cart
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Java Script Link -->
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
