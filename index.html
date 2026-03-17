@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Earth</title>
 
+    <!-- Css -->
+     <link rel="stylesheet" href="./tailwind.init.css">
 
     <!-- Tailwind Css And Daisy  Ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
@@ -28,8 +30,8 @@
 <body>
     <!-- Header Section -->
 
-    <header>
-        <nav class="flex justify-around bg-green-700 py-4 items-center">
+    <header class="overflow-hidden">
+        <nav class="flex justify-around bg-green-700 py-4 items-center sticky top-0 z-10">
             <h1 class="text-2xl text-white">Green Earth</h1>
 
             <ul class="flex text-white gap-4 ">
@@ -64,16 +66,16 @@
     <section class="bg-[#F0FDF4]">
 
         <!-- Choose Your Tree -->
-        <div class="container mx-auto">
+        <div class="container mx-auto ">
             <h1 class="text-3xl text-center font-bold text-black">Choose Your Tree</h1>
 
             <div class="grid grid-cols-12 gap-6  text-center ">
 
-                <div class="Categories col-span-3  font-2xl font-semibold ">
+                <div class="Categories col-span-3  font-2xl font-semibold sticky ">
                     Categories
-                    <div>
+                    <div class="top-0 z-10">
                         <button id="allTressBtn"
-                            class="btn btn-success bg-green-700 text-white font-semibold w-full mb-3 ">All
+                            class="btn-primary  bg-green-700 text-white font-semibold w-full mb-3 ">All
                             Tress</button>
 
                         <!-- Category Container daimany Load here -->
