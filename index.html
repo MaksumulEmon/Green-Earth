@@ -68,10 +68,13 @@
             <h1 class="text-3xl text-center font-bold text-black">Choose Your Tree</h1>
 
             <div class="grid grid-cols-12 gap-6  text-center ">
-                <div class="Categories col-span-3  font-2xl font-semibold">
+
+                <div class="Categories col-span-3  font-2xl font-semibold ">
                     Categories
                     <div>
-                        <button id="allTressBtn" class="btn btn-success bg-green-700 text-white font-semibold w-full mb-3 ">All Tress</button>
+                        <button id="allTressBtn"
+                            class="btn btn-success bg-green-700 text-white font-semibold w-full mb-3 ">All
+                            Tress</button>
 
                         <!-- Category Container daimany Load here -->
                         <div id="categoryContainer" class="space-y-3">
@@ -81,14 +84,41 @@
                 </div>
 
 
-                <div class="col-span-6 bg-amber-100">
-                    Trees
+
+                <!-- All tress -->
+                <div id="tressContainer" class="col-span-6 grid grid-cols-1 sm:grid-cols-3 gap-5 ">
+
+
+                    <!-- <div class="bg-white p-4 rounded space-y-2">
+                        <img src="./assets/about.png" alt="">
+                        <h4 class="text-left font-bold">Mango Tree</h4>
+                        <p class="text-left text-[12px] opacity-0.8 line-clamp-2">A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense
+                            green !</p>
+                        <div class="flex justify-between">
+                            <p class="font-semibold bg-[#dcfce7] py-1 px-3 text-[14px] rounded-full">Fruit Tree</p>
+                            <p class="font-bold">500$</p>
+
+                        </div>
+
+                        <button class="btn btn-success rounded-full w-full mt-2">Success</button>
+
+                    </div> -->
+
+
                 </div>
 
+
+
+                <!-- Add to cart Section -->
 
                 <div class=" col-span-3 bg-blue-600">
                     Cart
                 </div>
+            </div>
+
+            <!-- Loading Spainer -->
+            <div id="loadingSpainer" class=" h-[60v]  flex justify-center items-center">
+                <span class="loading loading-spinner loading-xl"></span>
             </div>
 
         </div>
